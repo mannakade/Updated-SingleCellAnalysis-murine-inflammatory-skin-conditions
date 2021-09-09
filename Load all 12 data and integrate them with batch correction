@@ -4,7 +4,8 @@ library(cowplot)
 library(gplots)
 library(dplyr)
 
-# install.packages("hdf5r")
+install.packages("hdf5r")
+
 ##############standard workflow
 
 # LOADING DATA
