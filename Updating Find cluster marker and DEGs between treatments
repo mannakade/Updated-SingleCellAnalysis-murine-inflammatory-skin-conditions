@@ -2,7 +2,7 @@ library(Seurat)
 library(xlsx)
 
 
-#install.packages('BiocManager')
+install.packages('BiocManager')
 BiocManager::install('multtest')
 install.packages('metap')
 BiocManager::install("MAST")
