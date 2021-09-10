@@ -1,11 +1,11 @@
 library(Seurat)
 library(xlsx)
-
+install.packages("SeuratObject")
 
 install.packages('BiocManager')
-BiocManager::install('multtest')
+#BiocManager::install('multtest')
 install.packages('metap')
-BiocManager::install("MAST")
+
 
 #######load data
 skin.integrated <- readRDS ("~/skin_integrated.rds")
@@ -33,7 +33,7 @@ for (i in 0:20){
   tab  <- paste0("Cluster", " ", i)
   write.xlsx(marker_i, file = "~/IMQ-IMQC-DEG.xlsx", sheetName = tab, append = TRUE)
 }
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
 
 
 ### Find DEGs between OXA and OXA-C
